@@ -1,0 +1,154 @@
+ul li a{
+    height: 9rem;
+    width: 9rem;
+    border: 1px solid #3de30b;
+    border-radius: 180px;
+    margin: 0.5rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #e30b0b;
+    overflow: hidden;
+    background-color: white;
+}
+
+ul{
+    justify-content: space-between;
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .content{
+    align-content: center;
+    color: whitesmoke;
+  }
+  
+  a:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+
+  .navbar{
+
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(60, 60, 147);
+    color: white;
+    font-weight: 600;
+  }
+
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #3de30b;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+  }
+
+  .navbar ul li:hover::after{
+    width: 100%;
+  }
+
+  .navlist{
+    display: flex;
+  }
+
+  .navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+  }
+
+  .sidebar{
+    justify-content: left;
+    display: list-item;
+    align-items: center;
+  }
+
+  .sidebar:hover{
+    box-shadow: #e30b0b;
+  }
+
+  label{
+    justify-content: center;
+    display: flex;
+  }
+
+  input{
+    border-radius: 60px;
+    border: solid #3de30b  ;
+  }
+
+  .mouthGuard{
+    justify-content: center;
+    display: flex;
+  }
+  .Cleets{
+    justify-content: center;
+    display: flex;
+  }
+  .scrumCap{
+    justify-content: center;
+    display: flex;
+  }
+
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+    color:blue;
+  }
+
+  .card-container .card:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+
+  .card-container .card:not(.highlight-card) {
+    cursor: pointer;
+  }
+
+  .card-container .card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card {
+    all: unset;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 40px;
+    width: 200px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+  }
