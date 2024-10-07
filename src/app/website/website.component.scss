@@ -42,6 +42,7 @@ ul{
     background-color: rgb(60, 60, 147);
     color: white;
     font-weight: 600;
+    z-index: 1;
   }
 
   .navbar ul li{
@@ -100,6 +101,8 @@ ul{
   input{
     border-radius: 60px;
     border: solid #3de30b  ;
+    z-index: 999;
+    margin: 5% 45%;
   }
 
   .mouthGuard{
